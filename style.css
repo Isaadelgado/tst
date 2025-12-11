@@ -270,66 +270,82 @@ footer .cont span {
   margin: 0 10px;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-  }
+@media (max-width: 600px) {
 
-  nav menu {
-    display: none;
-  }
-
-  nav menu.active {
-    display: flex;
+  /* HEADER */
+  header {
     flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+  nav {
+    justify-content: center;
+    gap: 10px;
   }
 
-  nav li {
-    margin: 10px 0;
+  nav a {
+    font-size: 14px;
   }
 
+  /* HERO */
   .hero {
-    height: 400px;
+    height: 320px;
+    padding-top: 120px;
   }
 
-  .hero-content h1 {
-    font-size: 2.5rem;
+  .hero h1 {
+    font-size: 40px;
   }
 
+  /* SOBRE */
   .about-content {
     flex-direction: column;
   }
 
-  .menu-category summary {
+  .about-image {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  /* CARDÁPIO */
+  .menu {
+    padding: 60px 20px;
+  }
+
+  summary {
     font-size: 20px;
   }
 
   .menu-item h3 {
-    font-size: 18px;
-  }
-
-  .menu-item h3 .price {
-    font-size: 16px;
-  }
-
-  .menu-item p {
-    font-size: 14px;
-  }
-
-  footer .container {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    gap: 5px;
   }
 
-  footer .social-links {
-    justify-content: center;
+  /* CONTATO */
+  .contact {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+  /* LOCALIZAÇÃO */
+  .map-container iframe {
+    height: 250px;
   }
 }
